@@ -27,15 +27,6 @@ export default async function ProductsPage() {
               key={index}
               className="col-span-3 flex min-h-[359px] flex-col px-4 py-6"
             >
-              <div className="mb-4 flex items-start justify-between">
-                <Image
-                  src={card.image}
-                  alt={card.title}
-                  width={79}
-                  height={79}
-                />
-                <Badge>{card.badge}</Badge>
-              </div>
               <CardTitle className="mb-3">{card.title}</CardTitle>
               <CardDescription className="flex flex-grow flex-col">
                 {card.description}
