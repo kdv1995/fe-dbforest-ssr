@@ -129,7 +129,7 @@ export const cardData: CardData[] = [
     disabled: true,
   },
 ];
-export async function GET(request: Request) {
+export async function GET() {
   return new Response(JSON.stringify(cardData), {
     headers: { "content-type": "application/json" },
   });

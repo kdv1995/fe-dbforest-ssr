@@ -1,23 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { StepIndicator } from "@/components/ui/stepper";
 import Link from "next/link";
-import { cookies } from "next/headers";
 
-export default async function Configure({
-  params,
-}: {
-  params: {
-    type: string;
-  };
-}) {
+export default async function Configure() {
   const steps = [
     { step: 1, label: "Software stack" },
     { step: 2, label: "Available offers" },
     { step: 3, label: "Configure Deployment" },
   ];
 
-  const cookieStore = cookies();
-  const selectedOffer = cookieStore.get("selectedOffer")?.value;
 
   return (
     <>
