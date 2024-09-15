@@ -1,6 +1,6 @@
+import { setOfferCookie } from "@/app/dashboard/actions/get-products";
 import { Button } from "@/components/ui/button";
 import { StepIndicator } from "@/components/ui/stepper";
-import { setOfferCookie } from "@/app/dashboard/api/products/route";
 
 export default async function AvailableOffers({
   params,
@@ -16,7 +16,7 @@ export default async function AvailableOffers({
   ];
   async function handleSubmit() {
     "use server"; // This makes the function a server action
-    await setOfferCookie(params.offer, 25 );
+    await setOfferCookie(params.offer, 25);
   }
 
   return (
