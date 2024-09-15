@@ -1,7 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { StepIndicator } from "@/components/ui/stepper";
-import Link from "next/link";
-import { cookies } from "next/headers";
 import { setOfferCookie } from "@/app/dashboard/api/products/route";
 
 export default async function AvailableOffers({
