@@ -1,6 +1,6 @@
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
-import { CardData } from "../api/products/route";
+import { CardData } from "../api/products/data";
 const isDev = process.env.NODE_ENV === "development";
 const localhost = process.env.NEXT_PUBLIC_LOCALHOST;
 const prod = process.env.NEXT_PUBLIC_API_URL;
