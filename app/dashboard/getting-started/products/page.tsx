@@ -1,10 +1,8 @@
 import { StepIndicator } from "@/components/ui/stepper";
-import { getProducts } from "../../actions/get-products";
 import Link from "next/link";
 import { Card, CardDescription, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import { getProducts } from "../../actions/get-products";
 
 export default async function ProductsPage() {
   const products = await getProducts();
